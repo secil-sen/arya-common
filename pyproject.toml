@@ -1,0 +1,18 @@
+[project]
+name = "arya-common"
+version = "0.1.0"
+description = "Common utilities for Arya HI services"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Secil Sen", email = "secil.sen@arya-ai.com" }]
+dependencies = []
+
+[project.optional-dependencies]
+s3 = ["boto3>=1.28.0"]
+zstd = ["zstandard>=0.22.0"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
