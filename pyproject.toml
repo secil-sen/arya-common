@@ -1,25 +1,19 @@
 [project]
 name = "arya-common"
-version = "0.1.4"
+version = "0.1.6"
 description = "Common utilities for Arya HI services"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{ name = "Secil Sen", email = "secil.sen@arya-ai.com" }]
-dependencies = ["boto3 (>=1.40.25,<2.0.0)", "httpx (>=0.28.1,<0.29.0)"]
+dependencies = ["httpx >=0.28.1,<0.29.0"]
 
 [project.optional-dependencies]
-s3 = ["boto3>=1.28.0"]
-zstd = ["zstandard>=0.22.0"]
+s3 = ["boto3 >=1.40.25,<2.0.0"]
+zstd = ["zstandard >=0.22.0"]
 
 [build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["arya_common"]  # tek paket
-
-[tool.setuptools.packages.find]
-include = ["arya_common*"]
-
-
-
+packages = ["arya_common"]
