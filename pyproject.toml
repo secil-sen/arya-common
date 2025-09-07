@@ -5,7 +5,7 @@ description = "Common utilities for Arya HI services"
 readme = "README.md"
 requires-python = ">=3.9"
 authors = [{ name = "Secil Sen", email = "secil.sen@arya-ai.com" }]
-dependencies = []
+dependencies = ["boto3 (>=1.40.25,<2.0.0)", "httpx (>=0.28.1,<0.29.0)"]
 
 [project.optional-dependencies]
 s3 = ["boto3>=1.28.0"]
